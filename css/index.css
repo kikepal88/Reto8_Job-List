@@ -64,13 +64,15 @@ main .main__cards-container {
   width: 100%;
 }
 .card__dates {
-  margin-bottom: 15px;
+  padding-bottom: 20px;
+  border-bottom: 0.5px solid var(--Dark-grayish-cyan);
 }
 .card__dates .dates__company {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
+  margin-bottom: 15px;
   font-size: 1.3rem;
   font-weight: 700;
 }
@@ -81,11 +83,58 @@ main .main__cards-container {
   color: var(--desaturated-dark-cyan);
 }
 .card__dates .dates__company .p2 {
-  width: 55px;
-  height: 22px;
-  padding: 6px 9px;
+  width: 54px;
+  height: 23px;
+  padding: 7px 10px;
   color: white;
   font-size: 1.1rem;
   background-color: var(--desaturated-dark-cyan);
   border-radius: 11px;
+}
+.card__dates .dates__company .p3 {
+  width: 80px;
+  height: 23px;
+  padding: 7px 10px;
+  color: white;
+  font-size: 1.1rem;
+  background-color: var(--VeryDark-grayish-cyan);
+  border-radius: 11px;
+}
+.card__dates .dates__job {
+  margin-bottom: 15px;
+}
+.card__dates .dates__job a {
+  color: var(--VeryDark-grayish-cyan);
+  font-weight: 700;
+  text-decoration: none;
+}
+.card__dates .dates__date {
+  display: flex;
+  color: var(--Dark-grayish-cyan);
+  font-size: 1.3rem;
+}
+.card__dates .dates__date ul {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 25px;
+}
+.card__dates .dates__date li {
+  margin-right: 25px;
+}
+.card__keywords {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+.card__keywords a {
+  width: auto;
+  margin-right: 15px;
+  margin-top: 15px;
+  padding: 10px;
+  color: var(--desaturated-dark-cyan);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: var(--Light-grayish-cyan);
+  border-radius: 5px;
 }

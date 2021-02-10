@@ -50,10 +50,11 @@ main .main__cards-container {
   position: relative;
   width: 100%;
   height: auto;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
   padding: 40px 20px 20px;
   border-radius: 5px;
   background-color: white;
+  box-shadow: 1px 10px 15px 0px rgba(91, 164, 164, 0.25);
 }
 .job__card.manage,
 .job__card.photosnap {
@@ -131,7 +132,7 @@ main .main__cards-container {
   flex-wrap: wrap;
   margin-top: 5px;
 }
-.card__keywords a {
+.card__keywords p {
   width: auto;
   height: 33px;
   margin-right: 15px;
@@ -143,4 +144,5 @@ main .main__cards-container {
   text-decoration: none;
   background-color: var(--Light-grayish-cyan);
   border-radius: 5px;
+  cursor: pointer;
 }

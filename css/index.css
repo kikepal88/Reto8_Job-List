@@ -37,6 +37,64 @@ main {
   background-color: var(--Light-grayish-cyan);
 }
 
+main .main__filter-container {
+  position: relative;
+  top: -40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px 20px 5px;
+  background-color: white;
+  border-radius: 5px;
+}
+.showfilters-containers {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.filter {
+  display: flex;
+  flex-wrap: nowrap;
+  width: auto;
+  height: 33px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.filter .keyword p {
+  width: auto;
+  padding: 10px;
+  color: var(--desaturated-dark-cyan);
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: var(--Light-grayish-cyan);
+  border-radius: 5px 0 0 5px;
+}
+.filter .remove {
+  width: 33px;
+  height: 33px;
+  background-color: var(--desaturated-dark-cyan);
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.filter .remove img {
+  width: 100%;
+  padding: 10px;
+}
+.clear-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  color: var(--Dark-grayish-cyan);
+  font-weight: 700;
+}
+
 main .main__cards-container {
   display: flex;
   justify-content: center;
@@ -141,7 +199,6 @@ main .main__cards-container {
   color: var(--desaturated-dark-cyan);
   font-size: 1.3rem;
   font-weight: 700;
-  text-decoration: none;
   background-color: var(--Light-grayish-cyan);
   border-radius: 5px;
   cursor: pointer;

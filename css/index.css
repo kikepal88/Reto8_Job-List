@@ -248,7 +248,7 @@ main .main__cards-container.filter-active {
   }
 
   .job__card {
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: nowrap;
   }
@@ -256,10 +256,11 @@ main .main__cards-container.filter-active {
     position: static;
     width: 20%;
     max-width: 100px;
-    margin-right: 20px;
+    margin-right: 2%;
   }
   .card__dates {
     width: 42%;
+    margin-right: 2%;
     padding-bottom: 0;
     border-bottom: none;
   }
@@ -275,4 +276,12 @@ main .main__cards-container.filter-active {
 }
 
 @media screen and (min-width: 900px) {
+  .card__dates {
+    width: 50%;
+    margin-right: 2%;
+  }
+  .card__keywords {
+    justify-content: flex-end;
+    width: 40%;
+  }
 }

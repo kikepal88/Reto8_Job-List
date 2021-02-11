@@ -122,11 +122,13 @@ main .main__cards-container.filter-active {
 }
 .card__img {
   position: absolute;
+  display: block;
   top: -25px;
   width: 50px;
   height: 50px;
 }
 .card__img img {
+  display: block;
   width: 100%;
 }
 .card__dates {
@@ -204,4 +206,31 @@ main .main__cards-container.filter-active {
   background-color: var(--Light-grayish-cyan);
   border-radius: 5px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  main .main__filter-container {
+    width: 85%;
+  }
+
+  main .main__cards-container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 40px 0 20px;
+  }
+  .job__card {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card__img {
+    position: static;
+    width: 20%;
+    max-width: 100px;
+    margin-right: 20px;
+  }
+  .card__dates {
+    width: 75%;
+    border-bottom: none;
+  }
 }

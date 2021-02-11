@@ -222,6 +222,26 @@ main .main__cards-container.filter-active {
     position: static;
     display: flex;
     flex-wrap: wrap;
+    padding: 30px;
+  }
+  .card__img {
+    position: static;
+    width: 20%;
+    height: auto;
+    max-width: 100px;
+    margin-right: 20px;
+  }
+  .card__dates {
+    width: 75%;
+    border-bottom: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .job__card {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
   }
   .card__img {
     position: static;
@@ -230,7 +250,16 @@ main .main__cards-container.filter-active {
     margin-right: 20px;
   }
   .card__dates {
-    width: 75%;
+    width: 42%;
+    padding-bottom: 0;
     border-bottom: none;
+  }
+  .card__keywords {
+    width: 37%;
+    margin-top: 0;
+  }
+  .card__keywords p {
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
   }
 }

@@ -103,7 +103,9 @@ main .main__cards-container {
   height: auto;
   padding: 40px 20px 20px;
 }
-
+main .main__cards-container.filter-active {
+  margin-top: -30px;
+}
 .job__card {
   position: relative;
   width: 100%;

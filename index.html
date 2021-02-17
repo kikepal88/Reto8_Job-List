@@ -1,179 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/favicon-32x32.png?alt=media&token=e85c8d00-0032-4910-ab4d-eabaae32d2b9">
+  <link rel="icon" type="image/png"
+    href="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/favicon-32x32.png?alt=media&token=e85c8d00-0032-4910-ab4d-eabaae32d2b9">
   <link rel="stylesheet" href="css/index.css">
   <title>Job-List</title>
 </head>
+
 <body>
   <header></header>
   <main>
-    <section class="main__filter-container">
+    <section id="main__filter-container" class="main__filter-container">
       <div class="showfilters-containers">
         <article class="filter">
-          <div class="keyword">
+          <div class="keyword" data-key="frontend">
             <p>
               Frontend
             </p>
           </div>
-          <div class="remove">
-            <img src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35" alt="Remove Icon">
+          <div class="remove" data-key="frontend" onclick="keywordClicked()">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35"
+              alt="Remove Icon">
           </div>
         </article>
         <article class="filter">
-          <div class="keyword">
+          <div class="keyword" data-key="senior">
             <p>
               Senior
             </p>
           </div>
-          <div class="remove">
-            <img src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35" alt="Remove Icon">
+          <div class="remove" data-key="senior" onclick="keywordClicked()">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35"
+              alt="Remove Icon">
           </div>
         </article>
         <article class="filter">
-          <div class="keyword">
+          <div class="keyword" data-key="html">
             <p>
               HTML
             </p>
           </div>
-          <div class="remove">
-            <img src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35" alt="Remove Icon">
+          <div class="remove" data-key="html" onclick="keywordClicked()">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35"
+              alt="Remove Icon">
           </div>
         </article>
         <article class="filter">
-          <div class="keyword">
+          <div class="keyword" data-key="css">
             <p>
               CSS
             </p>
           </div>
-          <div class="remove">
-            <img src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35" alt="Remove Icon">
+          <div class="remove" data-key="css" onclick="keywordClicked()">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35"
+              alt="Remove Icon">
           </div>
         </article>
         <article class="filter">
-          <div class="keyword">
+          <div class="keyword" data-key="javascript">
             <p>
               Javascript
             </p>
           </div>
-          <div class="remove">
-            <img src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35" alt="Remove Icon">
+          <div class="remove" data-key="javascript" onclick="keywordClicked()">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35"
+              alt="Remove Icon">
           </div>
         </article>
         <article class="filter">
-          <div class="keyword">
+          <div class="keyword" data-key="fullstack">
             <p>
               Fullstack
             </p>
           </div>
-          <div class="remove">
-            <img src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35" alt="Remove Icon">
+          <div class="remove" data-key="fullstack" onclick="keywordClicked()">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35"
+              alt="Remove Icon">
           </div>
         </article>
         <article class="filter">
-          <div class="keyword">
+          <div class="keyword" data-key="midweight">
             <p>
               Midweight
             </p>
           </div>
-          <div class="remove">
-            <img src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35" alt="Remove Icon">
+          <div class="remove" data-key="midweight" onclick="keywordClicked()">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35"
+              alt="Remove Icon">
           </div>
         </article>
         <article class="filter">
-          <div class="keyword">
+          <div class="keyword" data-key="python">
             <p>
               Python
             </p>
           </div>
-          <div class="remove">
-            <img src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35" alt="Remove Icon">
+          <div class="remove" data-key="python" onclick="keywordClicked()">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35"
+              alt="Remove Icon">
           </div>
         </article>
         <article class="filter">
-          <div class="keyword">
+          <div class="keyword" data-key="react">
             <p>
               React
             </p>
           </div>
-          <div class="remove">
-            <img src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35" alt="Remove Icon">
+          <div class="remove" data-key="react" onclick="keywordClicked()">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35"
+              alt="Remove Icon">
           </div>
         </article>
         <article class="filter">
-          <div class="keyword">
+          <div class="keyword" data-key="junior">
             <p>
               Junior
             </p>
           </div>
-          <div class="remove">
-            <img src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35" alt="Remove Icon">
+          <div class="remove" data-key="junior" onclick="keywordClicked()">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35"
+              alt="Remove Icon">
           </div>
         </article>
         <article class="filter">
-          <div class="keyword">
+          <div class="keyword" data-key="sass">
             <p>
               Sass
             </p>
           </div>
-          <div class="remove">
-            <img src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35" alt="Remove Icon">
+          <div class="remove" data-key="sass" onclick="keywordClicked()">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35"
+              alt="Remove Icon">
           </div>
         </article>
         <article class="filter">
-          <div class="keyword">
+          <div class="keyword" data-key="ruby">
             <p>
               Ruby
             </p>
           </div>
-          <div class="remove">
-            <img src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35" alt="Remove Icon">
+          <div class="remove" data-key="ruby" onclick="keywordClicked()">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35"
+              alt="Remove Icon">
           </div>
         </article>
         <article class="filter">
-          <div class="keyword">
+          <div class="keyword" data-key="ror">
             <p>
               RoR
             </p>
           </div>
-          <div class="remove">
-            <img src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35" alt="Remove Icon">
+          <div class="remove" data-key="ror" onclick="keywordClicked()">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35"
+              alt="Remove Icon">
           </div>
         </article>
         <article class="filter">
-          <div class="keyword">
+          <div class="keyword" data-key="vue">
             <p>
               Vue
             </p>
           </div>
-          <div class="remove">
-            <img src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35" alt="Remove Icon">
+          <div class="remove" data-key="vue" onclick="keywordClicked()">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35"
+              alt="Remove Icon">
           </div>
         </article>
         <article class="filter">
-          <div class="keyword">
+          <div class="keyword" data-key="django">
             <p>
               Django
             </p>
           </div>
-          <div class="remove">
-            <img src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35" alt="Remove Icon">
+          <div class="remove" data-key="django" onclick="keywordClicked()">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/icon-remove.svg?alt=media&token=e741864c-79c6-4f46-80e1-bd244adcae35"
+              alt="Remove Icon">
           </div>
         </article>
       </div>
-      <div class="clear-filter">
+      <div class="clear-filter" onclick="clearFilter()">
         <p>Clear</p>
       </div>
     </section>
     <section class="main__cards-container">
       <article class="job__card photosnap">
         <div class="card__img">
-          <img src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/photosnap.svg?alt=media&token=aefcb5df-d38c-4e3d-bb74-3f884cb1bb6e" alt="PhotoSnap logo">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/photosnap.svg?alt=media&token=aefcb5df-d38c-4e3d-bb74-3f884cb1bb6e"
+            alt="PhotoSnap logo">
         </div>
         <div class="card__dates">
           <div class="dates__company">
@@ -195,26 +230,28 @@
           </div>
         </div>
         <div class="card__keywords">
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="frontend">
             Frontend
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="senior">
             Senior
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="html">
             HTML
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="css">
             CSS
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="javascript">
             Javascript
           </p>
         </div>
       </article>
       <article class="job__card manage">
         <div class="card__img">
-          <img src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/manage.svg?alt=media&token=3d54d3a6-f935-4c7f-9977-29a106d72b8e" alt="Manage logo">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/manage.svg?alt=media&token=3d54d3a6-f935-4c7f-9977-29a106d72b8e"
+            alt="Manage logo">
         </div>
         <div class="card__dates">
           <div class="dates__company">
@@ -236,23 +273,25 @@
           </div>
         </div>
         <div class="card__keywords">
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="fullstack">
             Fullstack
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="midweight">
             Midweight
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="python">
             Python
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="react">
             React
           </p>
         </div>
       </article>
       <article class="job__card">
         <div class="card__img">
-          <img src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/account.svg?alt=media&token=5f0ced1d-129c-4362-a548-ae448aac84b2" alt="Account logo">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/account.svg?alt=media&token=5f0ced1d-129c-4362-a548-ae448aac84b2"
+            alt="Account logo">
         </div>
         <div class="card__dates">
           <div class="dates__company">
@@ -273,26 +312,28 @@
           </div>
         </div>
         <div class="card__keywords">
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="frontend">
             Frontend
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="junior">
             Junior
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="react">
             React
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="sass">
             Sass
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="javascript">
             Javascript
           </p>
         </div>
       </article>
       <article class="job__card">
         <div class="card__img">
-          <img src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/myhome.svg?alt=media&token=de5bf113-19f4-4157-a3b6-c9747c476c27" alt="MyHome logo">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/myhome.svg?alt=media&token=de5bf113-19f4-4157-a3b6-c9747c476c27"
+            alt="MyHome logo">
         </div>
         <div class="card__dates">
           <div class="dates__company">
@@ -312,23 +353,25 @@
           </div>
         </div>
         <div class="card__keywords">
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="frontend">
             Frontend
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="junior">
             Junior
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="css">
             CSS
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="javascript">
             Javascript
           </p>
         </div>
       </article>
       <article class="job__card">
         <div class="card__img">
-          <img src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/loop-studios.svg?alt=media&token=39e96c04-dcdf-45e7-b0c1-0e1a0a44ffbb" alt="Loop Studios logo">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/loop-studios.svg?alt=media&token=39e96c04-dcdf-45e7-b0c1-0e1a0a44ffbb"
+            alt="Loop Studios logo">
         </div>
         <div class="card__dates">
           <div class="dates__company">
@@ -348,26 +391,28 @@
           </div>
         </div>
         <div class="card__keywords">
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="fullstack">
             Fullstack
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="midweight">
             Midweight
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="javascript">
             Javascript
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="sass">
             Sass
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="ruby">
             Ruby
           </p>
         </div>
       </article>
       <article class="job__card">
         <div class="card__img">
-          <img src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/faceit.svg?alt=media&token=66218d69-5fe0-469d-8385-e4b618d6a514" alt="FaceIt logo">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/faceit.svg?alt=media&token=66218d69-5fe0-469d-8385-e4b618d6a514"
+            alt="FaceIt logo">
         </div>
         <div class="card__dates">
           <div class="dates__company">
@@ -387,23 +432,25 @@
           </div>
         </div>
         <div class="card__keywords">
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="backend">
             Backend
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="junior">
             Junior
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="ruby">
             Ruby
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="ror">
             RoR
           </p>
         </div>
       </article>
       <article class="job__card">
         <div class="card__img">
-          <img src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/shortly.svg?alt=media&token=08539775-e64e-4384-a6e0-01ce07200f8b" alt="Shortly logo">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/shortly.svg?alt=media&token=08539775-e64e-4384-a6e0-01ce07200f8b"
+            alt="Shortly logo">
         </div>
         <div class="card__dates">
           <div class="dates__company">
@@ -423,26 +470,28 @@
           </div>
         </div>
         <div class="card__keywords">
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="frontend">
             Frontend
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="junior">
             Junior
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="html">
             HTML
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="sass">
             Sass
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="javascript">
             Javascript
           </p>
         </div>
       </article>
       <article class="job__card">
         <div class="card__img">
-          <img src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/insure.svg?alt=media&token=ce90d97e-0fef-47c9-b0ec-f386e4068fe1" alt="Insure logo">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/insure.svg?alt=media&token=ce90d97e-0fef-47c9-b0ec-f386e4068fe1"
+            alt="Insure logo">
         </div>
         <div class="card__dates">
           <div class="dates__company">
@@ -462,26 +511,28 @@
           </div>
         </div>
         <div class="card__keywords">
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="frontend">
             Frontend
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="junior">
             Junior
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="vue">
             Vue
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="javascript">
             Javascript
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="sass">
             Sass
           </p>
         </div>
       </article>
       <article class="job__card">
         <div class="card__img">
-          <img src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/eyecam-co.svg?alt=media&token=969f33f0-3d29-4bf2-90e5-9f29d927f198" alt="Eyecam Co logo">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/eyecam-co.svg?alt=media&token=969f33f0-3d29-4bf2-90e5-9f29d927f198"
+            alt="Eyecam Co logo">
         </div>
         <div class="card__dates">
           <div class="dates__company">
@@ -501,26 +552,28 @@
           </div>
         </div>
         <div class="card__keywords">
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="fullstack">
             Fullstack
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="midweight">
             Midweight
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="javascript">
             Javascript
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="django">
             Django
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="python">
             Python
           </p>
         </div>
       </article>
       <article class="job__card">
         <div class="card__img">
-          <img src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/the-air-filter-company.svg?alt=media&token=69f416a9-6e45-42b7-aeea-23b1de8f8f21" alt="The Air Filter Company logo">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/filter-job-list.appspot.com/o/the-air-filter-company.svg?alt=media&token=69f416a9-6e45-42b7-aeea-23b1de8f8f21"
+            alt="The Air Filter Company logo">
         </div>
         <div class="card__dates">
           <div class="dates__company">
@@ -540,19 +593,19 @@
           </div>
         </div>
         <div class="card__keywords">
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="frontend">
             Frontend
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="junior">
             Junior
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="react">
             React
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="sass">
             Sass
           </p>
-          <p>
+          <p class="card__keyword" onclick="keywordClicked()" data-key="javascript">
             Javascript
           </p>
         </div>
@@ -561,4 +614,5 @@
   </main>
   <script src="js/index.js"></script>
 </body>
+
 </html>

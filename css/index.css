@@ -51,6 +51,9 @@ main .main__filter-container {
   background-color: white;
   border-radius: 5px;
 }
+main .main__filter-container.show {
+  display: flex;
+}
 .showfilters-containers {
   display: flex;
   justify-content: flex-start;
@@ -59,12 +62,15 @@ main .main__filter-container {
   width: 80%;
 }
 .filter {
-  display: flex;
+  display: none;
   flex-wrap: nowrap;
   width: auto;
   height: 33px;
   margin-right: 15px;
   margin-bottom: 15px;
+}
+.filter.show {
+  display: flex;
 }
 .filter .keyword p {
   width: auto;
@@ -115,6 +121,9 @@ main .main__cards-container.filter-active {
   border-radius: 5px;
   background-color: white;
   box-shadow: 1px 10px 15px 0px rgba(91, 164, 164, 0.25);
+}
+.job__card.hidden {
+  display: none;
 }
 .job__card.manage,
 .job__card.photosnap {
